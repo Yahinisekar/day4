@@ -70,7 +70,7 @@ console.log(sum([1, 2, 3, 4, 5]));
 
 //2.d Return all the prime numbers in an array
 
-const findPrime = function (arr) {
+const findPrime = (arr) =>{
   const primeNum = [];
 
   for (let i = 0; i < arr.length; i++) {
@@ -100,7 +100,7 @@ console.log(findPrime([1, 2, 3, 4, 5, 7, 11, 21, 81]));
 
 //2.e Return all palindromes in an array
 
-const palindrome = function (arr) {
+const palindrome = (arr)=> {
   const result = [];
   for (let i = 0; i < arr.length; i++) {
     if (typeof arr[i] === "string") {

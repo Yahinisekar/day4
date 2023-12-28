@@ -295,7 +295,7 @@ console.log(findMedian(nums1, nums2));
 
 //1.f IIFE function
 
-const findMedian2 = function (num1, num2) {
+const findMedian2 = (function (num1, num2) {
   const mergedArray = [];
   let i = 0,
     j = 0;
@@ -319,12 +319,12 @@ const findMedian2 = function (num1, num2) {
     const midIndex = Math.floor(length / 2);
     return mergedArray[midIndex];
   }
-};
+})([1,3], [2,4]);
 
-const num1 = [1, 3];
-const num2 = [2, 4];
+// const num1 = [1, 3];
+// const num2 = [2, 4];
 
-console.log(findMedian2(num1, num2));
+console.log(findMedian2);
 
 
 //1.g Remove duplicates from an array
@@ -396,7 +396,7 @@ console.log(rotateArray(originalArray, k));
 
 //  1.h IIFE function
 
-const rotatedArray = function (arr, k1) {
+const rotatedArray = (function (arr, k1) {
   const n = arr.length;
   k1 = k1 % n;
 
@@ -406,11 +406,8 @@ const rotatedArray = function (arr, k1) {
   }
 
   return arr;
-};
+})([1, 2, 3, 4, 5], 3);
 
-const originalArray2 = [1, 2, 3, 4, 5];
-const k1 = 3;
-
-console.log(rotateArray(originalArray, k1));
+console.log(rotatedArray);
 
 
