@@ -5,6 +5,39 @@
 
  - This repository contains JavaScript programs for various array operations, implemented using both anonymous functions (including IIFE) and arrow functions.
 
+## 1. Anonymous Function:
+
+```
+// Anonymous Function
+const sum = function (a, b) {
+  return a + b;
+};
+
+// Eg
+const result = sum(3, 5);
+console.log(result); // Output: 8
+```
+## 2. IIFE (Immediately Invoked Function Expression):
+
+```
+// IIFE
+(function () {
+  const message = "Hello world";
+  console.log(message);
+})();
+// Output: Hello world
+```
+## 3. Arrow Function:
+
+```
+// Arrow Function
+const multiply = (a, b) => a * b;
+
+//Eg
+const product = multiply(4, 6);
+console.log(product); // Output: 24
+```
+
 ## Table of Contents
 
 1. [Print Odd Numbers](#1-print-odd-numbers)
